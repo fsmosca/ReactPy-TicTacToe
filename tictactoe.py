@@ -8,7 +8,7 @@ requirements:
 
 
 from reactpy import component, html, hooks
-from reactpy.backend.fastapi import configure
+from reactpy.backend.fastapi import configure, Options
 from fastapi import FastAPI
 
 
@@ -23,6 +23,7 @@ BOOTSTRAP_CSS = html.link(
     }
 )
 
+PAGE_TITLE = 'ReactPy-TicTactoe'
 SQ_SIZE = '60px'
 PC_CHAR = {'p1': 'W', 'p2': 'B'}
 
@@ -139,4 +140,4 @@ def Tictactoe():
 
 
 app = FastAPI()
-configure(app, Tictactoe)
+configure(app, Tictactoe, options=Options(head=html.head(html.title(PAGE_TITLE))))
