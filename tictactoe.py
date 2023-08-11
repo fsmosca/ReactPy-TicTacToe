@@ -39,6 +39,12 @@ WIN_RESULT_PATTERN = [
 ]
 
 
+def reset_state(set_stm, set_board_status, board_status):
+    set_stm(True)
+    for i in range(len(board_status)):
+        set_board_status[i]('')
+
+
 @component
 def Tictactoe():
     stm, set_stm = hooks.use_state(True)  # side to move
@@ -110,6 +116,9 @@ def Tictactoe():
             disable_buttons()
             return html.h5({'class': 'text-secondary'}, 'The result is a draw.')
         return html.h5({'class': 'text-muted'}, 'No winner yet.')
+    
+    def new_game(event):
+        reset_state(set_stm, set_board_status, board_status)
 
     return html.div(
         BOOTSTRAP_CSS,
@@ -130,8 +139,16 @@ def Tictactoe():
                         ),
                     ),
                     html.br(),
-                    html.div({'class': 'container d-flex justify-content-center'},
+                    html.div({'class': 'container justify-content-center'},
                         determine_winner(),
+                        html.p(),
+                        html.button(
+                            {
+                                'class': 'btn btn-primary',
+                                'on_click': new_game
+                            },
+                            'New game'
+                        )
                     ),
                 ),
             ),
