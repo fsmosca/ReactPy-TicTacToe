@@ -1,1 +1,2 @@
-reactpy
+reactpy[fastapi]
+uvicorn[standard]
