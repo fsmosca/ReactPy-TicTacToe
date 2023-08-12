@@ -2,9 +2,9 @@
 
 A TictacToe game built with ReactPy and Bootstrap 5.
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVidMklvte687CplO-jkBb43Hybci7MBPxFDIHf_IYLHiDcU4AYZIdGKzT8sriMQwAzOQB-WeDnrbDmafZlovLYdWBba-2q9CNyipWkNVg9uZbNB88ef53J9R0bD0syWBdPs5t7288WJ4EIpn1DIgiTsaVVRmsO8W9fMpqVOZCyKbajJUmeRGJaeKrwuCQ/s1600/install-reactpy25.png)
+![image](https://github.com/fsmosca/ReactPy-TicTacToe/assets/22366935/c5945231-9341-4f24-b4ff-c633caff20b0)
 
-![image](https://github.com/fsmosca/ReactPy-TicTacToe/assets/22366935/1c0c6731-c329-4068-8aea-884c504bacc8)
+![image](https://github.com/fsmosca/ReactPy-TicTacToe/assets/22366935/ef0f4269-d6ff-4646-b513-907f8a19ea68)
 
 ## A. Setup
 
